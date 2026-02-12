@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Header Section -->
+    <group android:id="@+id/header_group">
+        <item
+            android:id="@+id/nav_header"
+            android:title="Employee"
+            android:enabled="false" />
+    </group>
+
+    <!-- Main Menu Items -->
+    <group android:id="@+id/main_menu_group">
+        <item
+            android:id="@+id/nav_dashboard"
+            android:icon="@drawable/ic_dashboard"
+            android:title="Dashboard" />
+
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_profile"
+            android:title="Profile" />
+
+        <item
+            android:id="@+id/nav_apply_leave"
+            android:icon="@drawable/ic_apply_leave"
+            android:title="Apply Leave" />
+
+        <item
+            android:id="@+id/nav_donate_leave"
+            android:icon="@drawable/ic_donation"
+            android:title="Donate Leave" />
+
+        <item
+            android:id="@+id/nav_donation_history"
+            android:icon="@drawable/ic_history"
+            android:title="Donation History" />
+
+        <item
+            android:id="@+id/nav_leave_history"
+            android:icon="@drawable/ic_leave_history"
+            android:title="Leave History" />
+
+        <item
+            android:id="@+id/nav_salary"
+            android:icon="@drawable/ic_salary"
+            android:title="Salary" />
+
+        <item
+            android:id="@+id/nav_holidays"
+            android:icon="@drawable/ic_holidays"
+            android:title="Holidays" />
+    </group>
+
+    <!-- Bottom Section -->
+    <group android:id="@+id/bottom_group">
+        <item
+            android:id="@+id/nav_notifications"
+            android:icon="@drawable/ic_notifications"
+            android:title="Notifications" />
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_logout"
+            android:title="Logout" />
+    </group>
+
+</menu>

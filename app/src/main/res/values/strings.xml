@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App Name -->
+    <string name="app_name">Employee Leave Management</string>
+
+    <!-- Leave types array -->
+    <string-array name="leave_types">
+        <item>Casual Leave</item>
+        <item>Sick Leave</item>
+        <item>Loss of Pay (LOP)</item>
+    </string-array>
+
+    <!-- ============ LOGIN ACTIVITY ============ -->
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="dont_have_account">Don\'t have account? Register</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="hint_email">Enter your email</string>
+    <string name="hint_password">Enter your password</string>
+    <string name="default_notification_channel_id">employee_channel</string>
+    <string name="default_notification_channel_name">Employee Notifications</string>
+
+    <!-- ============ REGISTER ACTIVITY ============ -->
+    <string name="register">Register</string>
+    <string name="full_name">Full Name</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="role">Role</string>
+    <string name="employee">Employee</string>
+    <string name="hr">HR</string>
+    <string name="department">Department</string>
+    <string name="designation">Designation</string>
+    <string name="already_have_account">Already have account? Login</string>
+    <string name="hint_name">Enter your full name</string>
+    <string name="hint_confirm_password">Confirm your password</string>
+
+    <!-- ============ EMPLOYEE DASHBOARD ============ -->
+    <string name="welcome">Welcome</string>
+    <string name="logout">Logout</string>
+    <string name="apply_leave">Apply Leave</string>
+    <string name="leave_history">Leave History</string>
+    <string name="salary">Salary</string>
+    <string name="holidays">Holidays</string>
+    <string name="profile">Profile</string>
+    <string name="designation_label">Designation</string>
+    <string name="department_label">Department</string>
+    <string name="leave_balance">Leave Balance</string>
+
+    <!-- Quick Actions -->
+    <string name="quick_apply_leave">Apply Leave</string>
+    <string name="quick_view_salary">View Salary</string>
+    <string name="quick_view_leaves">View Leaves</string>
+    <string name="quick_view_profile">View Profile</string>
+
+    <!-- Navigation Menu Items -->
+    <string name="nav_profile">My Profile</string>
+    <string name="nav_apply_leave">Apply Leave</string>
+    <string name="nav_leave_history">Leave History</string>
+    <string name="nav_salary">Salary Slips</string>
+    <string name="nav_holidays">Holiday Calendar</string>
+    <string name="nav_logout">Logout</string>
+
+    <!-- ============ APPLY LEAVE ACTIVITY ============ -->
+    <string name="apply_leave_title">Apply for Leave</string>
+    <string name="apply_for_leave">Apply for Leave</string>
+    <string name="leave_type">Leave Type</string>
+    <string name="from_date">From Date</string>
+    <string name="to_date">To Date</string>
+    <string name="reason">Reason</string>
+    <string name="apply">Apply</string>
+    <string name="submit_application">Submit Application</string>
+    <string name="hint_reason">Enter reason for leave</string>
+
+    <!-- ============ LEAVE HISTORY ACTIVITY ============ -->
+    <string name="leave_history_title">My Leave History</string>
+    <string name="no_leave_history">No leave history found</string>
+
+    <!-- ============ SALARY ACTIVITY ============ -->
+    <string name="salary_title">Salary Details</string>
+    <string name="salary_details">Salary Details</string>
+    <string name="basic_salary">Basic Salary</string>
+    <string name="net_salary">Net Salary</string>
+    <string name="deductions">Deductions</string>
+    <string name="total_working_days">Total Working Days</string>
+    <string name="present_days">Present Days</string>
+    <string name="leave_days">Leave Days</string>
+    <string name="lop_days">LOP Days</string>
+    <string name="daily_rate">Daily Rate</string>
+    <string name="download_salary_slip">Download Salary Slip</string>
+    <string name="salary_note">Note: Salary is calculated based on attendance and approved leaves.</string>
+
+    <!-- ============ HOLIDAY CALENDAR ACTIVITY ============ -->
+    <string name="holiday_title">Holiday Calendar 2024</string>
+    <string name="holidays_title">Holidays</string>
+
+    <!-- ============ HR DASHBOARD ============ -->
+    <string name="pending_leaves">Pending Leaves</string>
+    <string name="total_employees">Total Employees</string>
+    <string name="add_employee">Add Employee</string>
+    <string name="view_employees">View Employees</string>
+    <string name="reports">Reports</string>
+    <string name="no_pending_leaves">No pending leaves</string>
+
+    <!-- ============ FORGOT PASSWORD ACTIVITY ============ -->
+    <string name="reset_password">Reset Password</string>
+    <string name="send_reset_link">Send Reset Link</string>
+    <string name="back_to_login">Back to Login</string>
+
+    <!-- ============ COMMON MESSAGES ============ -->
+    <string name="success">Success</string>
+    <string name="error">Error</string>
+    <string name="loading">Loading…</string>
+    <string name="no_data">No data found</string>
+    <string name="required_field">This field is required</string>
+    <string name="invalid_email">Please enter a valid email</string>
+    <string name="password_length">Password must be at least 6 characters</string>
+    <string name="password_mismatch">Passwords do not match</string>
+
+    <!-- ============ TOAST MESSAGES ============ -->
+    <string name="login_success">Login successful!</string>
+    <string name="login_failed">Login failed. Please check your credentials.</string>
+    <string name="registration_success">Registration successful!</string>
+    <string name="logout_success">Logged out successfully</string>
+    <string name="leave_submitted">Leave application submitted!</string>
+    <string name="fill_all_fields">Please fill all fields</string>
+    <string name="employee_added">Employee added successfully!</string>
+    <string name="leave_approved">Leave approved successfully</string>
+    <string name="leave_rejected">Leave rejected successfully</string>
+    <string name="password_reset_sent">Password reset email sent!</string>
+
+    <!-- ============ PLACEHOLDERS ============ -->
+    <string name="todo">TODO</string>
+    <string name="title_activity_salary">Salary Details</string>
+    <string name="select_date">Select Date</string>
+    <string name="select_department">Select Department</string>
+    <string name="select_designation">Select Designation</string>
+    <string name="select_leave_type">Select Leave Type</string>
+    <string name="dates">Dates</string>
+    <string name="employee_name">Employee Name</string>
+    <string name="departmentkj">Department</string>
+    <string name="days">Days</string>
+    <string name="reasonj">Reason</string>
+    <string name="leave_typej">Leave Type</string>
+    <string name="request_date">Request Date</string>
+    <string name="approve">APPROVE</string>
+    <string name="reject">REJECT</string>
+    <string name="employee_namem">Employee Name</string>
+    <string name="departmenth">Department</string>
+    <string name="datesnh">Dates</string>
+    <string name="daysh">Days</string>
+    <string name="leave_typen">Leave Type</string>
+    <string name="reasonn">Reason</string>
+    <string name="emergency_details">Emergency Details</string>
+    <string name="request_dateh">Request Date</string>
+    <string name="approveh">APPROVE</string>
+    <string name="rejecth">REJECT</string>
+    <string name="loading_notifications">Loading notifications...</string>
+    <string name="hr_dashboarda">HR Dashboard</string>
+    <string name="_0sd">0</string>
+    <string name="add_employeeSW">Add Employee</string>
+    <string name="no_pending_leavesDCS">No pending leaves</string>
+    <string name="as">➕</string>
+    <string name="emergency_requestsx">🚨 Emergency Requests</string>
+    <string name="full_namesa">Full Name *</string>
+    <string name="enter_full_namec">Enter full name</string>
+    <string name="email_addressacs">Email Address *</string>
+    <string name="enter_email_addressca">Enter email address</string>
+    <string name="apply_emergency_leavesa">Apply Emergency Leave</string>
+    <string name="apply_regular_leavesa">Apply Regular Leave</string>
+    <string name="dd_mm_yyyya">DD/MM/YYYY</string>
+    <string name="donation_sourcesdc">Donation Sources</string>
+    <string name="sd">🚨</string>
+    <string name="request_leaves_from_common_poolcds">Request leaves from Common Pool</string>
+    <string name="emergency_leave_requestss">Emergency Leave Request</string>
+    <string name="sfrom_date">From Date *</string>
+    <string name="to_dates">To Date *</string>
+    <string name="dd_mm_yyyyz">DD/MM/YYYY</string>
+    <string name="reason_for_leavex">Reason for Leave *</string>
+    <string name="e_g_medical_emergencyxz">e.g., Medical emergency</string>
+    <string name="emergency_detailsxz">Emergency Details *</string>
+    <string name="explain_the_emergency_situationx">Explain the emergency situation...</string>
+    <string name="submit_request_to_hrxz">Submit Request to HR</string>
+    <string name="today_10_30_ama">Today, 10:30 AM</string>
+    <string name="rejectdas">Reject</string>
+    <string name="emailda">Email</string>
+    <string name="enter_your_full_namedas">Enter your full name</string>
+    <string name="registercsa">REGISTER</string>
+    <string name="todos">TODO</string>
+    <string name="holiday_calendar_2026">Holiday Calendar 2026</string>
+</resources>

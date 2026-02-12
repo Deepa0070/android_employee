@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="2dp"
+    android:layout_margin="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Header row with leave type and status -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:id="@+id/tvLeaveType"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Casual Leave"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tvStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="4dp"
+                android:text="Pending"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"/>
+        </LinearLayout>
+
+        <!-- Date range -->
+        <TextView
+            android:id="@+id/tvDateRange"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="15-16 Mar 2024"
+            android:textColor="#666666"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Reason -->
+        <TextView
+            android:id="@+id/tvReason"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Family function"
+            android:textColor="#666666"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Applied date -->
+        <TextView
+            android:id="@+id/tvAppliedOn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Applied: 10 Mar 2024"
+            android:textSize="12sp"
+            android:textColor="#999999"
+            android:gravity="end"/>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

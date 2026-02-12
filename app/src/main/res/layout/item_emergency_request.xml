@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:elevation="4dp"
+    app:cardCornerRadius="8dp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Employee Info -->
+        <TextView
+            android:id="@+id/tvEmployeeName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Employee Name"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/tvDepartment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Department"
+            android:textSize="14sp"
+            android:textColor="@color/gray" />
+
+        <!-- Dates and Days - Using layout_weight for equal spacing -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvDates"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Dates"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tvDays"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Days"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Leave Type and Details -->
+        <TextView
+            android:id="@+id/tvLeaveType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Leave Type"
+            android:textSize="14sp"
+            android:background="@drawable/status_background_pending"
+            android:padding="4dp"
+            android:gravity="center" />
+
+        <!-- Donation Info (for approved requests) -->
+
+        <!-- Source Donations -->
+        <TextView
+            android:id="@+id/tvSourceDonations"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Source donations"
+            android:textSize="12sp"
+            android:textColor="@color/gray"
+            android:visibility="gone" />
+
+        <!-- Reason -->
+        <TextView
+            android:id="@+id/tvReason"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Reason"
+            android:textSize="14sp" />
+        <!-- Add this in your item_emergency_request.xml layout -->
+        <TextView
+            android:id="@+id/tvDonationInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:padding="8dp"
+            android:background="@drawable/rounded_corner_grey"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:visibility="gone"
+            android:text="Available donations: Loading..." />
+
+        <TextView
+            android:id="@+id/tvApprovalInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/green"
+            android:textSize="12sp"
+            android:visibility="gone"
+            android:text="Approval info..." />
+
+        <!-- Emergency Details -->
+        <TextView
+            android:id="@+id/tvEmergencyDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Emergency Details"
+            android:textSize="14sp"
+            android:background="@color/light_red"
+            android:padding="8dp"
+            android:textColor="@color/red" />
+
+        <!-- Request Date -->
+        <TextView
+            android:id="@+id/tvRequestDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Request Date"
+            android:textSize="12sp"
+            android:textColor="@color/gray" />
+
+        <!-- Action Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/btnApprove"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                android:text="APPROVE"
+                android:backgroundTint="@color/green"
+                android:textColor="@color/white" />
+
+
+            <Button
+                android:id="@+id/btnReject"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:text="REJECT"
+                android:backgroundTint="@color/red"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Employee Info -->
+        <TextView
+            android:id="@+id/tvEmployeeName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Employee Name"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/tvDepartment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Department"
+            android:textSize="14sp"
+            android:layout_marginTop="4dp" />
+
+        <TextView
+            android:id="@+id/tvDesignation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Designation"
+            android:textSize="14sp" />
+
+        <!-- Leave Details -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey"
+            android:layout_marginVertical="8dp" />
+
+        <TextView
+            android:id="@+id/tvDates"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dates"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvDays"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Days"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvLeaveType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Leave Type"
+            android:textSize="14sp" />
+
+        <!-- Reason -->
+        <TextView
+            android:id="@+id/tvReason"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Reason"
+            android:textSize="14sp"
+            android:layout_marginTop="8dp" />
+
+        <!-- Emergency Details -->
+        <TextView
+            android:id="@+id/tvEmergencyDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Emergency Details"
+            android:textSize="14sp"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/red" />
+
+        <!-- Pool Availability -->
+        <TextView
+            android:id="@+id/tvPoolAvailability"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:padding="8dp"
+            android:background="@drawable/rounded_corner_grey"
+            android:textSize="12sp" />
+
+        <!-- Request Date -->
+        <TextView
+            android:id="@+id/tvRequestDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Request Date"
+            android:textSize="12sp"
+            android:textColor="@color/grey"
+            android:layout_marginTop="8dp" />
+
+        <!-- Action Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnApprove"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                android:text="APPROVE"
+                android:backgroundTint="@color/green"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/btnReject"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:text="REJECT"
+                android:backgroundTint="@color/red"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

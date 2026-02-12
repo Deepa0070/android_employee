@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="tvDates" type="id" />
+    <item name="tvLeaveDays" type="id" />
+    <item name="tvEligibilityStatus" type="id" />
+    <item name="tvLopDeduction" type="id"/>
+    <item name="spinnerMonth" type="id"/>
+    <item name="spinnerYear" type="id"/>
+    <item name="btnDownloadSalarySlip" type="id"/>
+    <item name="btnDownloadHolidayList" type="id"/>
+    <item name="tvYear" type="id"/>
+</resources>

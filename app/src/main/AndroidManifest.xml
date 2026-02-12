@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.yourname.employee">
+
+    <!-- Required permissions -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- For older Android versions -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <!-- 👇 ADD THESE TWO STORAGE PERMISSIONS HERE -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Employee Leave Management"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Employee"
+        tools:targetApi="31">
+
+        <!-- Main Activity -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Employee" />
+
+        <!-- Login Activity (Main Launcher) -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Employee">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Register Activity -->
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Employee" />
+
+        <!-- Forgot Password Activity -->
+        <activity
+            android:name=".ForgotPasswordActivity"
+            android:exported="false"
+            android:label="Reset Password"
+            android:parentActivityName=".LoginActivity"
+            android:theme="@style/Theme.Employee" />
+
+        <!-- Employee Dashboard -->
+        <activity
+            android:name=".EmployeeDashboardActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Employee" />
+
+        <!-- HR Dashboard -->
+        <activity
+            android:name=".HrDashboardActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Employee" />
+
+        <!-- Manager Dashboard -->
+        <activity
+            android:name=".ManagerDashboardActivity"
+            android:exported="false"
+            android:label="Manager Dashboard"
+            android:theme="@style/Theme.Employee" />
+
+        <!-- Profile Activity -->
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false"
+            android:label="My Profile"
+            android:theme="@style/Theme.Employee" />
+
+        <!-- Apply Leave Activity -->
+        <activity
+            android:name=".ApplyLeaveActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Employee" />
+
+        <!-- Emergency Leave Activity -->
+        <activity
+            android:name=".EmergencyLeaveActivity"
+            android:exported="false"
+            android:label="Emergency Leave"
+            android:theme="@style/Theme.Employee" />
+
+        <!-- Leave History Activity -->
+        <activity
+            android:name=".LeaveHistoryActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Employee" />
+
+        <!-- Salary Activity -->
+        <activity
+            android:name=".SalaryActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Employee" />
+
+        <!-- Holiday Calendar Activity -->
+        <activity
+            android:name=".HolidayCalendarActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Employee" />
+
+        <!-- Notifications Activity -->
+        <activity
+            android:name=".NotificationsActivity"
+            android:exported="false"
+            android:label="Notifications"
+            android:theme="@style/Theme.Employee" />
+
+        <!-- Leave Donation Activity -->
+        <activity
+            android:name=".LeaveDonationActivity"
+            android:exported="false"
+            android:label="Donate Leave"
+            android:theme="@style/Theme.Employee" />
+
+        <!-- Donation History Activity -->
+        <activity
+            android:name=".DonationHistoryActivity"
+            android:exported="false"
+            android:label="Donation History"
+            android:theme="@style/Theme.Employee" />
+
+        <!-- HR: All Employees Activity -->
+        <activity
+            android:name=".AllEmployeesActivity"
+            android:exported="false"
+            android:label="All Employees"
+            android:theme="@style/Theme.Employee" />
+
+        <!-- HR: Add Employee Activity -->
+        <activity
+            android:name=".AddEmployeeActivity"
+            android:exported="false"
+            android:label="Add Employee"
+            android:theme="@style/Theme.Employee" />
+
+        <!-- HR: Reports Activity -->
+        <activity
+            android:name=".ReportsActivity"
+            android:exported="false"
+            android:label="Reports"
+            android:theme="@style/Theme.Employee" />
+
+        <!-- HR: Common Pool Activity -->
+        <activity
+            android:name=".CommonPoolActivity"
+            android:exported="false"
+            android:label="Common Leave Pool"
+            android:theme="@style/Theme.Employee" />
+
+        <!-- HR: Emergency Requests Activity -->
+        <activity
+            android:name=".EmergencyRequestsActivity"
+            android:exported="false"
+            android:label="Emergency Requests"
+            android:theme="@style/Theme.Employee" />
+
+        <!-- Manager: Emergency Activity -->
+        <activity
+            android:name=".ManagerEmergencyActivity"
+            android:exported="false"
+            android:label="Emergency Requests"
+            android:theme="@style/Theme.Employee" />
+
+        <!-- Donation Sources Activity -->
+        <activity
+            android:name=".DonationSourcesActivity"
+            android:exported="false"
+            android:label="Donation Sources"
+            android:theme="@style/Theme.Employee" />
+
+        <!-- Firebase Messaging Service for Push Notifications -->
+        <service
+            android:name=".MyFirebaseMessagingService"
+            android:exported="false"
+            android:directBootAware="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <!-- Optional: Firebase Instance ID Service (deprecated in newer versions but may be needed) -->
+        <service
+            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+            android:exported="false"
+            android:directBootAware="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".MyFirebaseMessagingService"
+            android:exported="false"
+            android:directBootAware="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <!-- For Firebase Cloud Messaging -->
+        <service
+            android:name=".MyFirebaseInstanceIdService"
+            android:exported="false"
+            tools:ignore="MissingClass">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <!-- 👇 ADD FILE PROVIDER HERE - INSIDE APPLICATION TAG, AFTER OTHER COMPONENTS -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <!-- Notification Receiver for handling notification actions -->
+        <receiver
+            android:name=".NotificationReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.yourname.employee.ACTION_EMERGENCY_APPROVE" />
+                <action android:name="com.yourname.employee.ACTION_EMERGENCY_REJECT" />
+                <action android:name="com.yourname.employee.ACTION_LEAVE_APPROVED" />
+                <action android:name="com.yourname.employee.ACTION_LEAVE_REJECTED" />
+                <action android:name="com.yourname.employee.ACTION_NEW_LEAVE" />
+                <action android:name="com.yourname.employee.ACTION_VIEW_LEAVES" />
+                <action android:name="com.yourname.employee.ACTION_VIEW_NOTIFICATIONS" />
+            </intent-filter>
+        </receiver>
+
+        <!-- For Firebase Analytics and Cloud Messaging configuration -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_notification" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/notification_color" />
+
+        <!-- Firebase Analytics (optional) -->
+        <meta-data
+            android:name="firebase_analytics_collection_enabled"
+            android:value="true" />
+        <meta-data
+            android:name="firebase_crashlytics_collection_enabled"
+            android:value="true" />
+
+        <!-- For deep linking or app links (optional) -->
+        <meta-data
+            android:name="com.google.firebase.dynamic_links_auto_subdomain"
+            android:value="true" />
+
+    </application>
+
+</manifest>
