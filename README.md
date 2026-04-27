@@ -9,11 +9,7 @@
 ![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)
 ![Status](https://img.shields.io/badge/Status-Active-success?style=for-the-badge)
 
-<br/>
 
-![App Screenshot](https://github.com/user-attachments/assets/108b632c-1f0e-498c-b896-f2301207623b)
-
-</div>
 
 ---
 
