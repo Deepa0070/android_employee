@@ -11,7 +11,7 @@
 
 <br/>
 
-![App Screenshot](https://private-user-images.githubusercontent.com/176219204/584069870-16d626eb-4e39-4b35-abd3-d1cdd763c9fb.jpeg)
+![App Screenshot](https://github.com/user-attachments/assets/108b632c-1f0e-498c-b896-f2301207623b)
 
 </div>
 
@@ -96,9 +96,29 @@ android_employee/
 
 <div align="center">
 
-| Employee List | Add Employee |
+| Home / Employee List | Add Employee |
 |:---:|:---:|
-| <img src="https://github.com/user-attachments/assets/108b632c-1f0e-498c-b896-f2301207623b" width="250"/> | <img src="https://github.com/user-attachments/assets/bb88d09d-c014-4351-a815-2352194ae4cc" width="250"/> |
+| <img src="https://github.com/user-attachments/assets/108b632c-1f0e-498c-b896-f2301207623b" width="220"/> | <img src="https://github.com/user-attachments/assets/e5241345-5f17-4eec-92ca-9d2ba8301302" width="220"/> |
+
+| Employee Details | Edit Employee |
+|:---:|:---:|
+| <img src="https://github.com/user-attachments/assets/4b3b4ef6-de56-47c2-91ca-c51067fc7931" width="220"/> | <img src="https://github.com/user-attachments/assets/45e64f2e-6570-4307-a0aa-d1262ab1349a" width="220"/> |
+
+| Search Employee | Delete Confirmation |
+|:---:|:---:|
+| <img src="https://github.com/user-attachments/assets/eddf81dd-7456-4451-b438-9441928b9e8b" width="220"/> | <img src="https://github.com/user-attachments/assets/173fe55d-b9f2-4361-8cbb-e5a173aa2fcf" width="220"/> |
+
+| Dashboard | Profile View |
+|:---:|:---:|
+| <img src="https://github.com/user-attachments/assets/3eee2f29-f53a-4ecb-8ba9-dc70073affd2" width="220"/> | <img src="https://github.com/user-attachments/assets/3cefa1de-baa4-481e-90b9-3fae6c9f33ef" width="220"/> |
+
+| Settings | Filter / Sort |
+|:---:|:---:|
+| <img src="https://github.com/user-attachments/assets/b9168d6a-90ed-4059-83c7-bd72a7dc1c36" width="220"/> | <img src="https://github.com/user-attachments/assets/bf2857fa-eb9a-4847-9dc2-7b5faf24dcf4" width="220"/> |
+
+| Form Validation | Confirmation Screen |
+|:---:|:---:|
+| <img src="https://github.com/user-attachments/assets/96f6714b-3dd4-4f3e-9b4d-f3b9e87e3713" width="220"/> | <img src="https://github.com/user-attachments/assets/eb92fae1-b3db-4982-9d71-4ea6dff13c3d" width="220"/> |
 
 </div>
 
@@ -133,4 +153,3 @@ Distributed under the MIT License. See `LICENSE` for more information.
 ⭐ **If you found this project helpful, please give it a star!** ⭐
 
 </div>
-
