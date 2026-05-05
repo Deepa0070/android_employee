@@ -92,27 +92,27 @@ android_employee/
 
 <div align="center">
 
-| Home / Employee List | Add Employee |
+| Donation History | User Interface |
 |:---:|:---:|
 | <img src="https://github.com/user-attachments/assets/108b632c-1f0e-498c-b896-f2301207623b" width="220"/> | <img src="https://github.com/user-attachments/assets/e5241345-5f17-4eec-92ca-9d2ba8301302" width="220"/> |
 
-| Employee Details | Edit Employee |
+| Donate Leave | Notification |
 |:---:|:---:|
 | <img src="https://github.com/user-attachments/assets/4b3b4ef6-de56-47c2-91ca-c51067fc7931" width="220"/> | <img src="https://github.com/user-attachments/assets/45e64f2e-6570-4307-a0aa-d1262ab1349a" width="220"/> |
 
-| Search Employee | Delete Confirmation |
+| Forgot Password | Donating Leave |
 |:---:|:---:|
 | <img src="https://github.com/user-attachments/assets/eddf81dd-7456-4451-b438-9441928b9e8b" width="220"/> | <img src="https://github.com/user-attachments/assets/173fe55d-b9f2-4361-8cbb-e5a173aa2fcf" width="220"/> |
 
-| Dashboard | Profile View |
+| Pending Leave | Salary Details |
 |:---:|:---:|
 | <img src="https://github.com/user-attachments/assets/3eee2f29-f53a-4ecb-8ba9-dc70073affd2" width="220"/> | <img src="https://github.com/user-attachments/assets/3cefa1de-baa4-481e-90b9-3fae6c9f33ef" width="220"/> |
 
-| Settings | Filter / Sort |
+| Apply Leave | leave Type |
 |:---:|:---:|
 | <img src="https://github.com/user-attachments/assets/b9168d6a-90ed-4059-83c7-bd72a7dc1c36" width="220"/> | <img src="https://github.com/user-attachments/assets/bf2857fa-eb9a-4847-9dc2-7b5faf24dcf4" width="220"/> |
 
-| Form Validation | Confirmation Screen |
+| Form Validation | Employee DashBoard |
 |:---:|:---:|
 | <img src="https://github.com/user-attachments/assets/96f6714b-3dd4-4f3e-9b4d-f3b9e87e3713" width="220"/> | <img src="https://github.com/user-attachments/assets/eb92fae1-b3db-4982-9d71-4ea6dff13c3d" width="220"/> |
 
